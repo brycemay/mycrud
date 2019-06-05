@@ -12,7 +12,7 @@ export default class EditUpdate extends Component {
     e.preventDefault();
     const data = JSON.stringify(this.state);
     console.log(data);
-    await fetch(`http://localhost:4000/${this.props.match.params.id}`, {
+    await fetch(`https://git.heroku.com/thawing-reaches-34753.git/${this.props.match.params.id}`, {
       method: "PUT",
       body: data,
       headers: {

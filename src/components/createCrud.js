@@ -45,7 +45,7 @@ export default class CreateCrud extends Component {
   onSubmit = async e => {
     e.preventDefault();
     const data = JSON.stringify(this.state);
-    await fetch("http://localhost:4000", {
+    await fetch("https://thawing-reaches-34753.herokuapp.com/create", {
       method: "POST",
       body: data,
       headers: {

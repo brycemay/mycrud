@@ -7,13 +7,13 @@ export default class EditCrud extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:4000")
+    fetch('https://thawing-reaches-34753.herokuapp.com/edit/:id')
       .then(results => results.json())
       .then(data => this.setState({ projects: data }));
   }
 
   onDelete = async id => {
-    await fetch(`http://localhost:4000/${id}`, {
+    await fetch(`https://thawing-reaches-34753.herokuapp.com/edit/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
