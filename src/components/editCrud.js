@@ -13,7 +13,7 @@ export default class EditCrud extends Component {
   }
 
   onDelete = async id => {
-    await fetch(`https://secret-forest-15631.herokuapp.com/edit/${id}`, {
+    await fetch(`https://secret-forest-15631.herokuapp.com/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
